@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@500&family=Spectral:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+.modal {
+  width: 320px !important;
+  height: 320px !important;
+  z-index: 200;
+  position: absolute;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+.navbar-nav {
+  padding-top: 20px;
+}
+
+.navbar-nav {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 body {
@@ -56,6 +86,11 @@ header {
       transform: rotate(-360deg);
     }
   }
+  .instagram__logo {
+    width: 20px;
+    height: 20px;
+  }
+
   .banner {
     position: absolute;
     background: url("images/banner.png") no-repeat center;
@@ -69,6 +104,8 @@ header {
   }
 
   .navbar {
+    transition: 0.5s;
+    padding-bottom: 10px;
     position: fixed;
     box-shadow: none;
     width: 100%;
@@ -77,13 +114,14 @@ header {
   .navbar .flex__header {
     flex-direction: row;
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
   }
   .navbar .flex__header a {
     font-weight: 600;
-    font-size: 10px;
-    line-height: 150%;
+    font-size: 13px;
+    line-height: 15px;
     align-items: center;
     letter-spacing: 0.08em;
     color: #FFFFFF;
@@ -92,9 +130,17 @@ header {
     width: 20px;
     height: 18.43px;
   }
+  .navbar .flex__header .logo__block {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
   .navbar .flex__header .logo__block img {
     width: 80px;
     height: 45px;
+  }
+  .navbar .flex__header .logo__block p {
+    margin-top: 5px;
   }
   .navbar .flex__header .logo__block div {
     font-weight: 400;
@@ -111,12 +157,12 @@ header {
   }
 
   .banner__content {
-    padding: 176px 25px 0;
+    padding: 185px 25px 0;
     position: relative;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 24px;
+    line-height: 33px;
     z-index: 2;
-    line-height: 150%;
     text-align: center;
     letter-spacing: 0.08em;
     color: #FFFFFF;
@@ -135,14 +181,14 @@ header {
   }
   .talon__parent button a {
     display: inline-block;
-    width: 242px;
-    height: 43px;
+    width: 285px;
+    height: 55px;
     background: #FF0909;
     box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 150%;
-    padding-top: 10px;
+    padding-top: 12px;
     text-align: center;
     letter-spacing: 0.08em;
     color: #FFFBFB;
@@ -161,8 +207,8 @@ header {
   .banner__footer p {
     margin-top: 10px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 18px;
     max-width: 85px;
     text-align: center;
     color: #FFFFFF;
@@ -216,8 +262,8 @@ header {
   }
   .talon span {
     font-weight: 500;
-    font-size: 13px;
-    line-height: 150%;
+    font-size: 17px;
+    line-height: 20px;
     letter-spacing: 0.08em;
     color: #FFFFFF;
   }
@@ -247,16 +293,16 @@ header {
   }
   .content .content__block .title {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 21px;
+    line-height: 23px;
     color: #FFFFFF;
   }
   .content .content__block .text {
     margin-top: 15px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 20px;
     color: #FFFFFF;
   }
   .content .btn {
@@ -271,8 +317,8 @@ header {
     justify-content: center;
     text-align: center;
     display: flex;
-    width: 234px;
-    height: 46px;
+    width: 285px;
+    height: 55px;
     background: #FF0909;
     box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
     border-radius: 80px;
@@ -281,7 +327,7 @@ header {
     letter-spacing: 0.08em;
     color: #FFFFFF;
     font-weight: 900;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 150%;
   }
 
@@ -298,8 +344,8 @@ header {
   }
   .project .projects__block a {
     margin: 45px 0;
-    width: 307px;
-    height: 41px;
+    width: 322px;
+    height: 55px;
     background: #FF0909;
     box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
     border-radius: 80px;
@@ -311,13 +357,13 @@ header {
     letter-spacing: 0.08em;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 150%;
   }
   .project .projects__block h1 {
     font-weight: 900;
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 19px;
+    line-height: 20px;
     text-align: center;
     letter-spacing: 0.08em;
     color: #FFFFFF;
@@ -446,11 +492,11 @@ header {
     justify-content: space-between;
   }
   .main__item .item__content .flex__block .last__block__item__text {
-    max-width: 163px;
+    max-width: 266px;
   }
   .main__item .item__content .flex__block .last__block__item__img {
-    top: 193px;
-    right: 0;
+    top: 118px;
+    right: -32px;
     position: absolute;
   }
   .main__item .item__content .flex__block .block__item {
@@ -469,11 +515,15 @@ header {
     display: flex;
     align-items: center;
   }
+  .main__item .item__content .flex__block .list img {
+    width: 20px;
+    height: 20px;
+  }
   .main__item .item__content .flex__block .list span {
     font-weight: 700;
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 10px;
-    line-height: 12px;
+    line-height: 16px;
     display: inline-block;
     color: #000000;
   }
@@ -490,8 +540,8 @@ header {
   .main__item .item__content .flex__block .subtitle {
     margin: 10px 0;
     font-weight: 700;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 18px;
     max-width: 107px;
     text-align: center;
     color: #000000;
@@ -502,8 +552,8 @@ header {
     justify-content: center;
   }
   .main__item .item__content .find__out__cost {
-    width: 234px;
-    height: 46px;
+    width: 285px;
+    height: 55px;
     background: #FF0909;
     box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
     border-radius: 80px;
@@ -514,15 +564,15 @@ header {
   }
   .main__item .item__content .find__out__cost span {
     font-weight: 900;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.08em;
     color: #FFFFFF;
   }
   .main__item .item__content h1 {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
     color: #FFFFFF;
   }
@@ -534,15 +584,23 @@ header {
   }
   footer .footer__logo {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
-    justify-content: center;
     z-index: 2;
-    margin-top: 60px;
+    margin-top: 24px;
   }
   footer .footer__logo img {
-    width: 63px;
-    height: 46px;
+    width: 73px;
+    height: 51px;
+  }
+  footer .footer__logo p {
+    font-size: 14px !important;
+  }
+  footer .footer__logo p img {
+    width: 14px !important;
+    height: 14px !important;
   }
   footer .contact {
     position: relative;
@@ -550,16 +608,16 @@ header {
   }
   footer .contact h2 {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 24px;
+    line-height: 27px;
     letter-spacing: 0.08em;
     color: #FFFFFF;
   }
   footer .contact p {
     width: 232px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 130%;
+    font-size: 19px;
+    line-height: 20px;
     text-decoration-line: underline;
     color: #FFFFFF;
   }
@@ -569,13 +627,17 @@ header {
     z-index: 2;
     flex-direction: column;
   }
+  footer .phone__block img {
+    width: 18px;
+    margin-right: 22px;
+    height: 18px;
+  }
   footer .phone__block a {
     padding: 11px 0;
     display: inline-block;
-    margin-left: 10px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
+    font-size: 19px;
+    line-height: 20px;
     letter-spacing: 0.08em;
     color: #FFFFFF;
   }
