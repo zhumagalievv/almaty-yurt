@@ -3,19 +3,22 @@
 html {
   scroll-behavior: smooth;
 }
-.modal{
+
+.modal {
   width: 320px !important;
   height: 320px !important;
   z-index: 200;
   position: absolute;
 }
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-nav{
+.navbar-nav {
   padding-top: 20px;
 }
+
 .navbar-nav {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
@@ -26,7 +29,8 @@ html {
   line-height: 19px;
   text-transform: capitalize;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: white;
 }
 
@@ -57,8 +61,8 @@ header {
 
 @media screen and (max-width: 460px) {
   .whatsapp {
-    position: fixed;
-    bottom: 50px;
+    position: absolute;
+    top: 435px;
     right: 50px;
     z-index: 20;
 
@@ -88,8 +92,8 @@ header {
     }
   }
   .instagram__logo {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
   .banner {
     position: absolute;
@@ -103,8 +107,8 @@ header {
     left: 0
   }
   .navbar {
+    padding: 39px 27px;
     transition: 0.5s;
-    padding-bottom: 10px;
     position: fixed;
     box-shadow: none;
     width: 100%;
@@ -119,7 +123,7 @@ header {
 
       a {
         font-weight: 600;
-        font-size: 13px;
+        font-size: 10px;
         line-height: 15px;
         align-items: center;
         letter-spacing: 0.08em;
@@ -136,13 +140,16 @@ header {
         width: 100px;
         display: flex;
         flex-direction: column;
+
         img {
-          width: 80px;
-          height: 45px;
+          width: 40px;
+          height: 23px;
         }
-        p{
+
+        p {
           margin-top: 5px;
         }
+
         div {
           font-weight: 400;
           font-size: 8px;
@@ -162,15 +169,22 @@ header {
     color: white;
   }
   .banner__content {
+    p {
+      max-width: 360px;
+      margin: 0;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 33px;
+      text-align: center;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+    }
+
+    display: flex;
+    justify-content: center;
     padding: 185px 25px 0;
     position: relative;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
     z-index: 2;
-    text-align: center;
-    letter-spacing: 0.08em;
-    color: #FFFFFF;
   }
   .talon__parent {
     display: flex;
@@ -185,12 +199,12 @@ header {
 
       a {
         display: inline-block;
-        width: 285px;
-        height: 55px;
+        width: 265px;
+        height: 50px;
         background: #FF0909;
         box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
         font-weight: 700;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 150%;
         padding-top: 12px;
         text-align: center;
@@ -294,7 +308,7 @@ header {
       width: 100%;
       height: 100%;
       top: 0;
-      filter: brightness(0.5);
+      filter: brightness(0.4);
       left: 0;
       z-index: 1;
     }
@@ -310,7 +324,7 @@ header {
 
       .title {
         font-weight: 600;
-        font-size: 21px;
+        font-size: 18px;
         line-height: 23px;
         color: #FFFFFF;
       }
@@ -319,7 +333,7 @@ header {
         margin-top: 15px;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 20px;
         color: #FFFFFF;
 
@@ -340,8 +354,8 @@ header {
         justify-content: center;
         text-align: center;
         display: flex;
-        width: 285px;
-        height: 55px;
+        width: 265px;
+        height: 50px;
         background: #FF0909;
         box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
         border-radius: 80px;
@@ -350,7 +364,7 @@ header {
           letter-spacing: 0.08em;
           color: #FFFFFF;
           font-weight: 900;
-          font-size: 20px;
+          font-size: 15px;
           line-height: 150%;
         }
       }
@@ -369,8 +383,8 @@ header {
 
       a {
         margin: 45px 0;
-        width: 322px;
-        height: 55px;
+        width: 310px;
+        height: 42px;
         background: #FF0909;
         box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
         border-radius: 80px;
@@ -382,7 +396,7 @@ header {
           letter-spacing: 0.08em;
           color: #FFFFFF;
           font-weight: 700;
-          font-size: 15px;
+          font-size: 14px;
           line-height: 150%;
         }
       }
@@ -472,7 +486,6 @@ header {
 
         display: flex;
         justify-content: center;
-        margin-top: 28px;
 
         .list__item {
           margin-top: 34px;
@@ -484,11 +497,11 @@ header {
         p {
           margin-top: 10px;
           font-weight: 700;
-          font-size: 17px;
+          font-size: 14px;
           line-height: 21px;
           text-align: center;
           color: #000000;
-          width: 130px;
+          width: 196px;
         }
       }
 
@@ -523,13 +536,17 @@ header {
           p {
             margin-top: 10px;
             font-weight: 700;
-            font-size: 17px;
+            font-size: 14px;
             line-height: 21px;
             text-align: center;
             color: #000000;
-            width: 130px;
+            width: 102px;
           }
         }
+      }
+
+      .underLastBlockItem {
+        font-size: 14px;
       }
 
       .flex__block {
@@ -539,12 +556,13 @@ header {
         justify-content: space-between;
 
         .last__block__item__text {
-          max-width: 266px;
+          max-width: 163px;
+          font-size: 14px;
         }
 
         .last__block__item__img {
           top: 118px;
-          right: -32px;
+          right: -36px;
           position: absolute;
         }
 
@@ -574,7 +592,7 @@ header {
 
           span {
             font-weight: 700;
-            font-size: 14px;
+            font-size: 12px;
             margin-left: 10px;
             line-height: 16px;
             display: inline-block;
@@ -597,7 +615,7 @@ header {
         .subtitle {
           margin: 10px 0;
           font-weight: 700;
-          font-size: 16px;
+          font-size: 12px;
           line-height: 18px;
           max-width: 107px;
           text-align: center;
@@ -613,8 +631,8 @@ header {
       }
 
       .find__out__cost {
-        width: 285px;
-        height: 55px;
+        width: 265px;
+        height: 50px;
         background: #FF0909;
         box-shadow: 0px 0px 35px rgba(255, 0, 0, 0.75);
         border-radius: 80px;
@@ -625,7 +643,7 @@ header {
 
         span {
           font-weight: 900;
-          font-size: 20px;
+          font-size: 15px;
           line-height: 150%;
           letter-spacing: 0.08em;
           color: #FFFFFF;
@@ -657,15 +675,16 @@ header {
       margin-top: 24px;
 
       img {
-        width: 73px;
-        height: 51px;
+        width: 61px;
+        height: 43px;
       }
-      p{
-        font-size: 14px!important;
 
-        img{
-          width: 14px !important;
-          height: 14px !important;
+      p {
+        font-size: 10px !important;
+
+        img {
+          width: 10px !important;
+          height: 10px !important;
         }
       }
 
@@ -677,7 +696,7 @@ header {
 
       h2 {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 27px;
         letter-spacing: 0.08em;
         color: #FFFFFF;
@@ -686,10 +705,10 @@ header {
       p {
         width: 232px;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 12px;
         line-height: 20px;
         text-decoration-line: underline;
-        color: #FFFFFF;
+        color: #FFFFFF
       }
     }
 
@@ -701,16 +720,16 @@ header {
       flex-direction: column;
 
       img {
-        width: 18px;
-        margin-right: 22px;
-        height: 18px;
+        width: 12px;
+        margin-right: 5px;
+        height: 12px;
       }
 
       a {
         padding: 11px 0;
         display: inline-block;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.08em;
         color: #FFFFFF;
@@ -727,4 +746,19 @@ header {
     background: url("images/footer__wallpaper.svg");
     filter: brightness(0.5);
   }
+  .travertin img {
+    margin-bottom: 20px;
+  }
+  .dekor img {
+    margin-bottom: 13px;
+  }
+  .animated-icon1 {
+    width: 25px;
+    height: 16px;
+
+    span {
+      height: 1px !important;
+    }
+  }
+
 }
