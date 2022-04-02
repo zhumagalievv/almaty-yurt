@@ -159,7 +159,7 @@ header {
   .banner__content {
     display: flex;
     justify-content: center;
-    padding: 185px 25px 0;
+    padding: 220px 25px 0;
     position: relative;
     z-index: 2;
   }
@@ -167,7 +167,7 @@ header {
     max-width: 360px;
     margin: 0;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 33px;
     text-align: center;
     letter-spacing: 0.08em;
@@ -202,7 +202,7 @@ header {
   }
 
   .banner__footer {
-    padding: 60px 25px 0 25px;
+    padding: 40px 25px 0 25px;
     position: relative;
     z-index: 2;
     display: flex;
@@ -220,7 +220,7 @@ header {
     color: #FFFFFF;
   }
   .banner__footer .equal, .banner__footer .plus {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .banner__footer .equal {
     margin-right: 5px;
@@ -250,6 +250,8 @@ header {
   }
   .banner__footer .result img {
     width: 80px;
+    margin-top: -13px;
+    margin-bottom: 13px;
     height: 65.84px;
   }
   .banner__footer .result p {
@@ -259,7 +261,7 @@ header {
   .talon {
     display: flex;
     align-items: flex-end;
-    margin: 181px 0 0 0;
+    margin: 165px 0 0 0;
   }
   .talon img {
     height: 52px;
@@ -442,6 +444,10 @@ header {
     display: flex;
     justify-content: center;
   }
+  .main__item .item__content .brand__one .width3 {
+    width: 78px;
+    height: 63.64px;
+  }
   .main__item .item__content .brand__one .list__item {
     margin-top: 34px;
     display: flex;
@@ -468,18 +474,19 @@ header {
     align-items: center;
   }
   .main__item .item__content .brand__list .list__item .width1 {
-    width: 52px;
-    height: 51.64px;
+    width: 68px;
+    height: 64.64px;
     margin-bottom: 5px;
   }
   .main__item .item__content .brand__list .list__item .width2 {
-    width: 72px;
-    height: 48px;
+    width: 85px;
+    height: 59px;
     margin-bottom: 10px;
   }
   .main__item .item__content .brand__list .list__item .width3 {
-    width: 66px;
-    height: 56.79px;
+    width: 68px;
+    height: 64.64px;
+    margin-bottom: 4px;
   }
   .main__item .item__content .brand__list .list__item p {
     margin-top: 10px;
@@ -504,7 +511,9 @@ header {
     font-size: 14px;
   }
   .main__item .item__content .flex__block .last__block__item__img {
-    top: 118px;
+    top: 135px;
+    width: 200px;
+    height: 180px;
     right: -36px;
     position: absolute;
   }
@@ -540,11 +549,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 0;
+    padding: 25px 0 5px;
+  }
+  .main__item .item__content .flex__block .item__element img {
+    width: 107px;
+    height: 100px;
   }
   .main__item .item__content .flex__block .luxury {
-    width: 112px;
-    height: 109px;
+    width: 157px;
+    height: 149px;
+    margin-top: 50px;
   }
   .main__item .item__content .flex__block .subtitle {
     margin: 10px 0;
@@ -658,7 +672,8 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background: url("images/footer__wallpaper.svg");
+    background: url("images/footer__wallpaper.svg") no-repeat center;
+    background-size: cover;
     filter: brightness(0.5);
   }
 
