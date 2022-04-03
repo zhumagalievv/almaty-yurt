@@ -58,7 +58,7 @@ header {
 
 @media screen and (max-width: 460px) {
   .whatsapp {
-    position: absolute;
+    position: fixed;
     top: 435px;
     right: 50px;
     z-index: 20;
@@ -432,7 +432,7 @@ header {
     position: absolute;
     top: -79px;
     right: -26px;
-    background: url("images/element__bg__part.svg");
+    background: url("images/element__bg__part.png");
     z-index: 2;
   }
   .main__item .item__content {
@@ -475,6 +475,7 @@ header {
   }
   .main__item .item__content .brand__list .list__item .width1 {
     width: 68px;
+    border-radius: 50%;
     height: 64.64px;
     margin-bottom: 5px;
   }
@@ -691,6 +692,11 @@ header {
   }
   .animated-icon1 span {
     height: 1px !important;
+  }
+
+  #china-flag, #turkey, #german {
+    width: 108px !important;
+    height: 76px !important;
   }
 }
 
