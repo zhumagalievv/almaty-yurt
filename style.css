@@ -637,7 +637,7 @@ header {
     letter-spacing: 0.08em;
     color: #FFFFFF;
   }
-  footer .contact p {
+  footer .contact p a{
     width: 232px;
     font-weight: 400;
     font-size: 12px;
